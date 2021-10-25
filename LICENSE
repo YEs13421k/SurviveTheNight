@@ -1,6 +1,13 @@
 local Player = game.Players.Testerextra
 
 Player.Chatted:connect(function(cht)
+    if cht:match("/e reset") then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end 
+end)     
+local Player = game.Players.Testerextra
+
+Player.Chatted:connect(function(cht)
     if cht:match("/e slow") then
                 local gmt = getrawmetatable(game)
 local oldIndex = gmt.__index
