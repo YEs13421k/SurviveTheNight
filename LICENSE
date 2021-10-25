@@ -1,3 +1,4 @@
+if game.PlaceId == 990364410 then
 local Player = game.Players.Testerextra
 
 Player.Chatted:connect(function(cht)
